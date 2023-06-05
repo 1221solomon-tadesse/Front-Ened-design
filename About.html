@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <title>
+        FULL-STACK DEVELOPMENT
+    </title>
+    <meta charset="UTF-8" />
+    <link rel="C:\Users\Alexise\Documents\a_python.py\soll.py" />
+    <meta name="kewords" content="html,css,python, coding in amharic" />
+    <link rel="stylesheet" href="soll.CSS">
+    <style>
+        /*CSS (cascading style sheet)*/
+        
+        header {
+            background-color: gray;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: bisque;
+        }
+        
+        .sol {
+            background-color: orange;
+        }
+        
+        .sol li {
+            margin-right: 50px;
+            display: inline-block;
+        }
+        
+        .sol li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: chartreuse;
+        }
+        
+        body {
+            background-color: powderblue;
+        }
+        
+        main {
+            padding: 50px;
+            background-color: powderblue;
+            margin-top: 50px;
+        }
+        
+        footer {
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+            background-color: bisque;
+        }
+        
+        .fo {
+            margin: 20px;
+        }
+        
+        p1 {
+            color: blue;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x.length < 5) {
+                alert(" first Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["age"].value;
+
+            var text = "Input OK";
+
+            // If x is Not a Number, or x is less than 18, or x is grather than 25 then
+            if (isNaN(x) || x < 18 || x > 25) {
+                alert("Not valid for you, the aplication is valid for age between 18-24");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--to agust formating we use spam in each-->
+    <header>
+        <h style="font-size: 64px;background-color: darkgray;">
+            <spam style="color:green;font-style: italic;">Welcom to our </spam>
+            <spam style="color: indigo;font-style: italic;">
+                web development tutorial. </spam>
+        </h><br>
+        <ul class="sol">
+            <li><a href="./Home.html">Home</a>
+            </li>
+            <li>
+                <a href="./Aplay.html">Aplay</a>
+            </li>
+            <li>
+                <a href="./About.html">About</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </header><br>
+    <br><br><br><br><br>
+    <br>
+    < <h style="color:orange;border-color:blue;background-color:blanchedalmond;font: size 50px;text-align: center;">About our website</h><br><br>
+        <p1>Our website is designed to provide users with a comprehensive and easy-to-use resource for<br> learning about front-enand back-end development. Whether you are a beginner or an experienced <br> developer, our website offers a wealth of tutorials
+            andresources to help you improve your skills<br> and stay up-to-date with the latest trends and technologies in the field.</p1><br><br>
+        <p1>One of the key features of our website is the extensive library of tutorials and guides on a wide<br> range of topics related to web development. From basic HTML and CSS to advanced topics like <br> JavaScript frameworks and server-side programming,our
+            tutorials cover everything you need to know<br> to become a skilled and knowledgeable developer.</p1><br><br>
+        <p1>In addition to our tutorials, we also offer a range of other resources to help youlearn and grow as <br> a developer. These include online courses, webinars, forums, and other community resources where<br> you can connect with other developer
+            and share your knowledge and experiences.
+        </p1>
+        <footer>
+
+            <div class="fo">
+                <a href="https://t.me/+_xDWhgdIN1RiNDJk">telegram</a>
+
+                <a href="">facbook</a>
+                <a href="">github</a>
+            </div>
+            <div>
+                <small>copyrith &copy; |Solomon Tadesse</small>
+            </div>
+        </footer>
+
+        </main>
+</body>
+
+</html>

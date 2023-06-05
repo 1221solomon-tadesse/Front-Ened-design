@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <title>
+        FULL-STACK DEVELOPMENT
+    </title>
+
+    <meta charset="UTF-8" />
+    <link rel="C:\Users\Alexise\Documents\a_python.py\soll.py" />
+    <meta name="kewords" content="html,css,python, coding in amharic" />
+    <link rel="stylesheet" href="soll.CSS">
+    <style>
+        /*CSS (cascading style sheet)*/
+        
+        header {
+            background-color: gray;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: bisque;
+        }
+        
+        .sol {
+            background-color: orange;
+        }
+        
+        .sol li {
+            margin-right: 50px;
+            display: inline-block;
+        }
+        
+        .sol li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: chartreuse;
+        }
+        
+        body {
+            /*   padding: 50px;*/
+            background-color: powderblue;
+        }
+        
+        .form-group {
+            border-style: solid;
+            border-radius: 50px;
+            border-color: aqua;
+            bottom: 10px;
+            border-width: 40;
+        }
+        
+        main {
+            background-color: wheat;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid blueviolet;
+            border-radius: 10px;
+        }
+        
+        footer {
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+            background-color: bisque;
+        }
+        
+        .fo {
+            margin: 15px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var pw = document.getElementById("signup").value;
+            //check empty password field  
+            if (pw == "") {
+                document.getElementById("message").innerHTML = "**Fill the password please!";
+                return false;
+            }
+
+            //minimum password length validation  
+            if (pw.length < 8) {
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+                return false;
+            }
+
+            //maximum length of password validation  
+            if (pw.length > 15) {
+                document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+                return false;
+            } else {
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--to agust formating we use spam in each-->
+    <header>
+        <h style="font-size: 64px;background-color: darkgray;">
+            <spam style="color:green;font-style: italic;">Welcom to our </spam>
+            <spam style="color: indigo;font-style: italic;">
+                web development tutorial </spam>
+        </h><br>
+        <ul class="sol">
+            <li><a href="./Home.html">Home</a>
+            </li>
+            <li>
+                <a href="./Aplay.html">Aplay</a>
+            </li>
+            <li>
+                <a href="./About.html">About</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </header>
+    </br>
+
+    </br><br><br><br>
+    </br><br>
+    <main>
+        <div>
+            <!--to create application form we use placeholder or lable-->
+            <div>
+                <h4 style="font-size: 20px;color: darkmagenta;text-decoration-line: underline;">Application form</h4>
+                <form name="myForm" action="/action_page.php" onclick="return validateForm()" method="post">
+
+                    <label>Enter Your Email</label>
+                    <input type="email" data-parsley-type="email" placeholder="Email" required />
+                    <br><br>
+                    <label>Enter Your Password</label>
+                    <input type="password" Id="signup" data-parsley-pattern="^[a-zA-Z]+$" placeholder="*****" required />
+                    <span id="message" style="color:red"> </span> <br><br>
+
+                    <a href="./signup.html" style="color:rgba(34, 12, 12, 0.418);font-size: 20px;">Sign-up</a>
+            </div>
+    </main>
+
+    <footer>
+        <div class="fo">
+            <a href="https://t.me/+_xDWhgdIN1RiNDJk"><i class="fa-brands fa-telegram"></i></a>
+
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+            <small>copyrith &copy; |Solomon Tadesse</small>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

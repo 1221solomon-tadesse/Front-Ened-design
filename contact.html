@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <title>
+        FULL-STACK WEB DEVELOPMENT TUTORIAL
+    </title>
+    <meta charset="UTF-8" />
+    <link rel="C:\Users\Alexise\Documents\a_python.py\soll.py" />
+    <meta name="kewords" content="html,css,python, coding in amharic" />
+    <link rel="stylesheet" href="soll.CSS">
+    <style>
+        /*CSS (cascading style sheet)*/
+        
+        header {
+            background-color: gray;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+            height: 120;
+            margin-right: 50px;
+            color: blueviolet;
+        }
+        
+        .sol {
+            background-color: orange;
+        }
+        
+        .sol li {
+            margin-right: 50px;
+            display: inline-block;
+        }
+        
+        .sol li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: chartreuse;
+        }
+        
+        body {
+            background-color: powderblue;
+        }
+        
+        h4 {
+            padding: 50px;
+            margin-top: 50px;
+        }
+        
+        main {
+            background-color: wheat;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        footer {
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+            background-color: bisque;
+        }
+        
+        .fo {
+            margin: 20px;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            let x = document.getElementsById("numb").value;
+            if (isNaN(x) || x < 18 || x > 25) {
+                document.getElementById("message").innerHTML = "**Sorry your age must be between 18 and 25";
+                return false;
+            }
+
+        }
+    </script>
+    <script>
+        function validateForm() {
+            var pw = document.getElementById("pswd").value;
+            //check empty password field  
+            if (pw == "") {
+                document.getElementById("message").innerHTML = "**Fill the password please!";
+                return false;
+            }
+
+            //minimum password length validation  
+            if (pw.length < 8) {
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+                return false;
+            }
+
+            //maximum length of password validation  
+            if (pw.length > 15) {
+                document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+                return false;
+            } else {
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!--to agust formating we use spam in each-->
+    <header>
+        <h style="font-size: 64px;background-color: darkgray;">
+            <spam style="color:green;font-style: italic;">Welcom to </spam>
+            <spam style="color: indigo;font-style: italic;">
+                Web development tutorial. </spam>
+        </h>
+        <ul class="sol">
+            <li><a href="./Home.html">Home</a>
+            </li>
+            <li>
+                <a href="./Aplay.html">Aplay</a>
+            </li>
+            <li>
+                <a href="./About.html">About</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <br>
+        <h4 style="font-size: 20px;color: rgb(0, 5, 139);text-decoration-line: underline;"> if you have any questions or comments.</h4>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" onsubmit="return validateform()" method="post">
+            <label for="first name">Fist Name</label>
+            <input type="text" placeholder="first name" name="fname" required /></br>
+
+            </br>
+            <label for="last name">Last Name</label>
+            <input type="text" id="last name" placeholder="last name" name="lname" required /></br>
+            </br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="write your email" required /></br>
+            <!-- Enter Password --><br>
+            <td> Enter Password </td>
+            <input type="password" id="pswd" value="" placeholder="****" required>
+            <span id="message" style="color:red"> </span> <br><br>
+            </div>
+            <div>
+                <label for="message" required>write your comment</label></br>
+                <textarea name="message" id="message" -lacsholder="write your comment" cols="50" rows="5" placeholder="write you comment"></textarea></br>
+                </br>
+            </div>
+
+            </br>
+            <button style="color:green" submit>submit</button></br>
+            </br>
+
+            <div>
+                <h>And contact with </h><br>
+                <a href="1221solomon-tadesse/github.com">github</a>
+                <a href="https://github.com/1221solomon-tadesse" style="width:20%"><i class="fa-brands fa-apple"style="width:50%"></i></a>
+                <h>Other address from the footer part</h>
+            </div>
+            <footer>
+                <div class="fo">
+                    <a href="https://t.me/+_xDWhgdIN1RiNDJk">telegram</a>
+
+                    <a href="">facbook</a>
+                    <a href="1221solomon-tadesse/github.com"><i class="fa-brands fa-apple"style="width:50%"></i></a>
+                </div>
+    </main>
+    <div>
+        <small>copyrith &copy; |Solomon Tadesse</small>
+    </div>
+    </footer>
+
+</body>
+</head>
+
+</html>

@@ -1,0 +1,246 @@
+<html>
+
+<head>
+    <title>
+        FULL-STACK WEB DEVELOPMENT TUTORIAL:
+    </title>
+    <meta charset="UTF-8" />
+    <link rel="C:\Users\Alexise\Documents\a_python.py\soll.py" />
+    <meta name="kewords" content="html,css,python, coding in amharic" />
+    <link rel="stylesheet" href="soll.CSS">
+    <style>
+        /*CSS (cascading style sheet)*/
+        
+        header {
+            background-color: gray;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+            height: 120;
+            margin-right: 50px;
+            color: blueviolet;
+        }
+        
+        .sol {
+            background-color: orange;
+        }
+        
+        .sol li {
+            margin-right: 50px;
+            display: inline-block;
+        }
+        
+        .sol li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: chartreuse;
+        }
+        
+        body {
+            padding: 50px;
+            background-color: powderblue;
+            margin-top: 50px;
+        }
+        
+        h1 {
+            padding: 50px;
+            margin-top: 50px;
+        }
+        
+        main {
+            background-color: wheat;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid blueviolet;
+            border-radius: 10px;
+        }
+        
+        footer {
+            left: 0px;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+            background-color: bisque;
+        }
+        
+        .fo {
+            margin: 20px;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            let x = document.getElementsById("numb").value;
+            if (isNaN(x) || x < 18 || x > 25) {
+                document.getElementById("message").innerHTML = "**Sorry your age must be between 18 and 25";
+                return false;
+            }
+
+        }
+    </script>
+    <script>
+        function validateForm() {
+            var pw = document.getElementById("pswd").value;
+            //check empty password field  
+            if (pw == "") {
+                document.getElementById("message").innerHTML = "**Fill the password please!";
+                return false;
+            }
+
+            //minimum password length validation  
+            if (pw.length < 8) {
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
+                return false;
+            }
+
+            //maximum length of password validation  
+            if (pw.length > 15) {
+                document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
+                return false;
+            } else {
+
+            }
+        }
+    </script>
+    <script>
+        function validateForm()
+        var x = document.getElementsById(El).value;
+        if (x.length <= 5) {
+
+            document.getElementById("sms").innerHTML = '**Email must greater than 5 caracter**'
+        }
+    </script>
+</head>
+
+<body>
+    <!--to agust formating we use spam in each-->
+    <header>
+        <h style="font-size: 64px;background-color: darkgray;">
+            <spam style="color:green;font-style: italic;">Welcom to </spam>
+            <spam style="color: indigo;font-style: italic;">
+                web development tutorial </spam>
+        </h>
+        <ul class="sol">
+            <li><a href="./Home.html">Home</a>
+            </li>
+            <li>
+                <a href="./Aplay.html">Aplay</a>
+            </li>
+            <li>
+                <a href="./About.html">About</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </header>
+    </br>
+    </br>
+
+    <h1 style="font-size: 30px;font-style: oblique;background-color: greenyellow;  color:red">please fill all required fild of the application form properly and then don't forget to click<span style="color:blue"></span> submit buton</h1>
+    <div>
+        <!--to create application form we use placeholder or lable-->
+        <main>
+            <h4 style="font-size: 20px;color: rgb(0, 5, 139);text-decoration-line: underline;">Application form</h4>
+            <div class="abc">
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" onsubmit="return validateform()" method="post">
+                    <label for="first name">Fist Name</label>
+                    <input type="text" placeholder="first name" name="fname" required /></br>
+
+                    </br>
+                    <label for="last name">Last Name</label>
+                    <input type="text" id="last name" placeholder="last name" name="lname" required /></br>
+                    </br>
+                    <labler for="birth date">Birth_date</lable>
+                        <input type="date" name="date" required/></br>
+                        </br>
+
+                        <label for="age"> Age</label>
+                        <input id="numb" type="text" placeholder="age" Name="age" required /></br>
+                        </br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="write your email" required /></br>
+                        <!-- Enter Password -->
+                        <td> Enter Password </td>
+                        <input type="password" id="pswd" value="" placeholder="****" required>
+                        <span id="message" style="color:red"> </span> <br><br>
+            </div>
+            <div>
+                <p4 style="color: darkorange;font-size: 20px; " required>Gender</p4>
+                </br>
+                <input type="radio" id="female" Name="Gender" />
+                <label for="female">Female</label></br>
+                <input type="radio" id="Male" Name="Gender" />
+                <label for="Male">Male</label></br>
+                <input type="radio" id="other" Name="Gender" />
+                <label for="other">other</label>
+            </div>
+            <div>
+                <p5 style="color: fuchsia;font-size: 20px;">select your country</p5>
+                <select name="region" id="region" required>
+     <option value="">select----</option>
+     <option value="Tigray">Ethiopia</option>
+     <option value="afar">Eritria</option>
+     <option value="amhara">Somalia</option>
+     <option value="ormia">Liberia</option>
+     <option value="Somalia">Djibouti</option>
+     <option value="benishangul">Sudan</option>
+     <option value="SNNP">Nigeria</option>
+     <option value="gambela">South-africa</option>
+     <option value="harar">Ruwanda</option>
+ </select>
+            </div>
+            <div>
+                <p6 style="color: fuchsia;font-size: 20px;">What are your skills</p6>
+                </br>
+                <input type="checkbox" />
+                <label for="Python">Python</label></br>
+                <input type="checkbox" />
+                <label for="C++">C++</label></br>
+                <input type="checkbox" />
+                <label for="java">Java</label></br>
+                <input type="checkbox" />
+                <label for="javascript">javascript</label></br>
+                <input type="checkbox" />
+                <label for="CSS">CSS</label></br>
+                <input type="checkbox" />
+                <label for="html">HTML</label></br>
+                <input type="checkbox" />
+                <label for="redux">redux</label></br>
+                <input type="checkbox" />
+                <label for="react">react</label></br>
+            </div>
+            <div>
+                <label for="message" required>write your comment</label></br>
+                <textarea name="message" id="message" -lacsholder="write your comment" cols="50" rows="5" placeholder="write you comment"></textarea></br>
+                </br>
+            </div>
+            <div>
+            </div>
+            <input type="file" /></br>
+            <input type="checkbox" required/> I agreed that all the information I have provided is true and belongs tome.
+
+            </br>
+            </br>
+            <button style="color:green" submit>submit</button></br>
+        </main>
+        </br>
+        </form>
+        <footer>
+            <div class="fo">
+                <a href="https://t.me/+_xDWhgdIN1RiNDJk">telegram</a>
+
+                <a href="">facbook</a>
+                <a href="">github</a>
+            </div>
+            <div>
+                <small>copyrith &copy; |Solomon Tadesse</small>
+            </div>
+        </footer>
+
+</body>
+
+</html>
